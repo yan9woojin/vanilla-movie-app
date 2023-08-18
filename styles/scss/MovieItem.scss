@@ -1,0 +1,54 @@
+@import "global";
+
+:host {
+  @include flex(start, start, 0.5rem, column);
+  position: relative;
+}
+
+.link {
+  @include flex(start, start, 0.5rem, column);
+  width: 100%;
+
+  &:hover {
+    .poster__image {
+      transform: scale(1.1);
+      transition: 0.2s;
+    }
+  }
+}
+
+.badge {
+  position: absolute;
+  z-index: 1;
+  left: 5px;
+  color: white;
+  font-size: 3rem;
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 0 0 10px #555;
+}
+
+.poster {
+  overflow: hidden;
+  width: 213px;
+  height: 300px;
+  border-radius: 5px;
+
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.title {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.info {
+  @include flex(space-between, end);
+  width: 100%;
+  color: #999;
+}

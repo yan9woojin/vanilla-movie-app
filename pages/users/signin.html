@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <title>로그인</title>
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css"
+    />
+    <link rel="stylesheet" href="../../styles/css/main.css" />
+    <link rel="stylesheet" href="../../styles/css/sign.css" />
+    <script type="module" src="../../app.js" defer></script>
+  </head>
+  <body>
+    <!-- 헤더 -->
+    <global-header></global-header>
+
+    <!-- 메인 -->
+    <main class="main">
+      <div class="main__inner">
+        <!-- form -->
+        <h2 class="page-title">로그인</h2>
+        <form class="sign-form">
+          <input
+            type="text"
+            name="id"
+            id="id"
+            minlength="5"
+            maxlength="16"
+            placeholder="아이디를 입력해주세요."
+            required
+            class="sign-form__input"
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            minlength="5"
+            maxlength="16"
+            placeholder="비밀번호를 입력해주세요."
+            required
+            class="sign-form__input"
+          />
+          <button type="button" class="btn">로그인</button>
+        </form>
+        <!-- oauth -->
+        <div class="oauth">
+          <span class="oauth__title">SNS로 로그인</span>
+          <button type="button" class="btn oauth__kakao">카카오로 로그인</button>
+          <button type="button" class="btn oauth__naver">네이버로 로그인</button>
+          <button type="button" class="btn oauth__google">구글로 로그인</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- 푸터 -->
+    <global-footer></global-footer>
+  </body>
+</html>

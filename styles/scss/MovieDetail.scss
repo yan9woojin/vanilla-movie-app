@@ -1,0 +1,27 @@
+@import "global";
+
+.movie {
+  @include grid(center, center, 2rem);
+  grid-template-columns: 213px minmax(min-content, 500px);
+
+  &__poster {
+    width: 213px;
+    height: 300px;
+  }
+
+  &__info {
+    @include flex(space-between, flex-start, 1rem, column);
+    height: 100%;
+  }
+
+  &__title {
+    font-weight: 800;
+  }
+
+  &__plot {
+    grid-column: span 2;
+    font-size: 1rem;
+    word-break: break-all;
+    white-space: pre-line;
+  }
+}

@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+:host {
+  display: block;
+}
+
+.btn {
+  background-color: #5e77fd;
+  width: 100%;
+  padding: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #2d46cb;
+}
+
+.sign-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+  width: 20rem;
+  margin: 0 auto;
+}
+.sign-form__input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+}
+
+.oauth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+  width: 20rem;
+  margin: 0 auto;
+  border-top: 1px solid #ccc;
+  padding-top: 2rem;
+}
+.oauth__title {
+  color: #ccc;
+  font-size: 0.8rem;
+}
+.oauth__kakao {
+  background-color: #fee500;
+  color: #555;
+}
+.oauth__kakao:hover {
+  background-color: #e9d202;
+}
+.oauth__naver {
+  background-color: #2db400;
+}
+.oauth__naver:hover {
+  background-color: #1f8e04;
+}
+.oauth__google {
+  background-color: #fff;
+  color: #555;
+  border: 1px solid #ccc;
+}
+.oauth__google:hover {
+  background-color: #ccc;
+}

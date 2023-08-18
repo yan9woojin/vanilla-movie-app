@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+:host {
+  display: block;
+}
+
+.hero {
+  position: relative;
+  top: 60px;
+  width: 100vw;
+  max-height: 640px;
+  aspect-ratio: 9/4;
+  background-color: black;
+  background-image: url("../../images/hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.main {
+  position: relative;
+  top: 60px;
+  padding: 0 1rem;
+  margin-bottom: 6rem;
+  min-height: calc(100vh - 232px);
+}
+.main__inner {
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: column;
+  margin: 1rem auto;
+}
+
+.page-title {
+  width: 100%;
+  font-weight: 900;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.movies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+  width: 100%;
+  margin: 1rem auto;
+}
+.movies__header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: row;
+  width: 100%;
+}
+.movies__title {
+  font-weight: 900;
+}
+.movies__link {
+  color: #888;
+}
+
+.lnb__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: row;
+}
+.lnb__link {
+  color: #ccc;
+  font-size: 1.2rem;
+  font-weight: 900;
+  transition: all 0.2s ease-out;
+}
+.lnb__link:not(.lnb__link--active):hover {
+  color: #5e77fd;
+  font-size: 1.5rem;
+}
+.lnb__link--active {
+  font-size: 1.8rem;
+  color: black;
+}

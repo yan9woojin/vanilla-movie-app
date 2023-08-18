@@ -1,0 +1,59 @@
+@import "global";
+
+@mixin backgroundColor($color, $hColor) {
+  background-color: $color;
+
+  &:hover {
+    background-color: $hColor;
+  }
+}
+
+.btn {
+  @include backgroundColor($primary-color, #2d46cb);
+  width: 100%;
+  padding: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.sign-form {
+  @include flex(center, center, 1rem, column);
+  width: 20rem;
+  margin: 0 auto;
+
+  &__input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+  }
+}
+
+.oauth {
+  @include flex(center, center, 1rem, column);
+  width: 20rem;
+  margin: 0 auto;
+  border-top: 1px solid #ccc;
+  padding-top: 2rem;
+
+  &__title {
+    color: #ccc;
+    font-size: 0.8rem;
+  }
+
+  &__kakao {
+    @include backgroundColor(#fee500, #e9d202);
+    color: #555;
+  }
+
+  &__naver {
+    @include backgroundColor(#2db400, #1f8e04);
+  }
+
+  &__google {
+    @include backgroundColor(#fff, #ccc);
+    color: #555;
+    border: 1px solid #ccc;
+  }
+}

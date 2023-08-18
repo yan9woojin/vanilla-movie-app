@@ -1,0 +1,79 @@
+@import "global";
+
+.hero {
+  position: relative;
+  top: 60px;
+  width: 100vw;
+  max-height: 640px;
+  aspect-ratio: 9 / 4;
+  background: {
+    color: black;
+    image: url("../../images/hero.png");
+    position: center;
+    repeat: no-repeat;
+    size: contain;
+  }
+}
+
+.main {
+  position: relative;
+  top: 60px;
+  padding: 0 1rem;
+  margin-bottom: 6rem;
+  min-height: calc(100vh - 232px);
+
+  &__inner {
+    @include page-max-width;
+    @include flex(center, center, 2rem, column);
+    margin: 1rem auto;
+  }
+}
+
+.page-title {
+  width: 100%;
+  font-weight: 900;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.movies {
+  @include flex(center, center, 1rem, column);
+  width: 100%;
+  margin: 1rem auto;
+
+  &__header {
+    @include flex(start, center, 1rem);
+    width: 100%;
+  }
+
+  &__title {
+    font-weight: 900;
+  }
+
+  &__link {
+    color: #888;
+  }
+}
+
+.lnb {
+  &__list {
+    @include flex(center, center, 2rem);
+  }
+
+  &__link {
+    color: #ccc;
+    font-size: 1.2rem;
+    font-weight: 900;
+    transition: all 0.2s ease-out;
+
+    &:not(&--active):hover {
+      color: $primary-color;
+      font-size: 1.5rem;
+    }
+
+    &--active {
+      font-size: 1.8rem;
+      color: black;
+    }
+  }
+}

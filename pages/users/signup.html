@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <title>회원가입</title>
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css"
+    />
+    <link rel="stylesheet" href="../../styles/css/main.css" />
+    <link rel="stylesheet" href="../../styles/css/sign.css" />
+    <script type="module" src="../../app.js" defer></script>
+  </head>
+  <body>
+    <!-- 헤더 -->
+    <global-header></global-header>
+
+    <!-- 메인 -->
+    <main class="main">
+      <div class="main__inner">
+        <!-- form -->
+        <h2 class="page-title">회원가입</h2>
+        <form class="sign-form">
+          <button type="button" class="btn">이메일로 회원가입</button>
+        </form>
+        <!-- oauth -->
+        <div class="oauth">
+          <span class="oauth__title">SNS로 회원가입</span>
+          <button type="button" class="btn oauth__kakao">카카오로 회원가입</button>
+          <button type="button" class="btn oauth__naver">네이버로 회원가입</button>
+          <button type="button" class="btn oauth__google">구글로 회원가입</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- 푸터 -->
+    <global-footer></global-footer>
+  </body>
+</html>
